@@ -79,5 +79,6 @@ Run the following command to start the Laravel built-in development server:
 
 ```bash
 php artisan serve
-
+npm run dev
+```
 
