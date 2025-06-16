@@ -24,7 +24,10 @@
     <div class="row">
         <div class="col-md-12">
             <div class="card">
-                <div class="container">
+                <div class="card-header">
+                    Course Details
+                </div>
+                <div class="card-body">
                     <h2>Course: {{ $course->title }}</h2>
                     <p><strong>Description:</strong> {{ $course->description }}</p>
                     <p><strong>Category:</strong> {{ $course->category }}</p>
