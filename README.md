@@ -10,9 +10,9 @@ Laravel 9.19 default project without predefined assets, views nor routes.
 $ git clone https://github.com/mdmridul6/Soft_task.git
 ```
 
-**Step 2**: go into the `laravel-default-project` folder and run composer
+**Step 2**: go into the `Soft_task` folder and run composer
 ```sh
-$ cd laravel-default-project
+$ cd Soft_task
 $ composer install
 ```
 
