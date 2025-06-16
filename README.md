@@ -23,18 +23,61 @@ $ composer update
 
 **Step 3**: install node modules with [yarn](https://yarnpkg.com/) or npm
 ```sh
-# with yarn
-$ yarn
 # with npm 
 $ npm install
 ```
 
-**Step 3.1**: if you want to upgrade to the last module versions, do it with yarn or npm
-```sh
-# with yarn
-$ yarn upgrade
-# with npm 
-$ npm update
+**Step 4**: Copy `.env` File
+
+To set up your environment configuration, copy the example `.env` file included in the project:
+
+```bash
+cp .env.example .env
 ```
 
-**Step 4**: if you want a fresh start for the project, remove the `.git` folder
+**Step 5**:
+Generate Application Key
+
+Laravel requires an application key to secure user sessions and encrypted data. After copying your `.env` file, generate a new application key by running:
+
+```bash
+php artisan key:generate
+```
+
+**Step 6**: Configure Your `.env` File
+
+After copying the `.env.example` file to `.env`, you need to update it with your environment-specific settings.
+
+### Important fields to update:
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=your_database_name
+DB_USERNAME=your_database_user
+DB_PASSWORD=your_database_password
+
+APP_NAME=YourAppName
+APP_ENV=local
+APP_DEBUG=true
+APP_URL=http://localhost
+
+```
+**Step 7**: Run Database Migrations
+
+To create the necessary tables and database structure for the application, run the Laravel migrations with this command:
+
+```bash
+php artisan migrate
+```
+**Step 8**: Serve the Application & Build Frontend Assets
+
+### Start Laravel Development Server
+
+Run the following command to start the Laravel built-in development server:
+
+```bash
+php artisan serve
+
+
