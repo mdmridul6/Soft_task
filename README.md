@@ -2,12 +2,12 @@
 
 ## About Laravel default project
 
-Laravel 5.4 default project without predefined assets, views nor routes.
+Laravel 9.19 default project without predefined assets, views nor routes.
 
 **Step 1**: clone the project with git
 
 ```sh
-$ git clone https://github.com/rogervila/laravel-default-project.git
+$ git clone https://github.com/mdmridul6/Soft_task.git
 ```
 
 **Step 2**: go into the `laravel-default-project` folder and run composer
